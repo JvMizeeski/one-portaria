@@ -26,12 +26,19 @@
             sans: ['Inter', 'sans-serif'],
           },
           colors: {
+            // Nova Identidade: Azul Corporativo / Segurança Tecnológica
             brand: {
-              300: '#fcd34d',
-              400: '#fbbf24',
-              500: '#f59e0b',
-              600: '#d97706',
-              700: '#b45309',
+              50: '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              300: '#93c5fd',
+              400: '#60a5fa',
+              500: '#3b82f6',
+              600: '#2563eb', // Cor Primária Principal
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+              950: '#172554',
             }
           }
         }
@@ -39,10 +46,10 @@
     }
   </script>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-slate-950">
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-600 selection:text-white">
 
   <!-- TOP BAR AVISO -->
-  <div class="bg-brand-500 text-slate-950 text-xs font-bold py-2 px-4 text-center tracking-wide">
+  <div class="bg-brand-600 text-white text-xs font-bold py-2 px-4 text-center tracking-wide">
     <span>Tecnologia avançada para gestão autônoma e portaria remota em condomínios</span>
   </div>
 
@@ -67,10 +74,10 @@
       <!-- BOTÕES CTA -->
       <div class="hidden sm:flex items-center gap-3">
         <a href="https://wa.me/5548999999999?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20One%20Security%20Portaria" target="_blank" class="px-4 py-2.5 rounded-full text-xs font-bold text-slate-800 bg-slate-100 hover:bg-slate-200 transition flex items-center gap-2">
-          <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i>
+          <i data-lucide="message-circle" class="w-4 h-4 text-brand-600"></i>
           Suporte
         </a>
-        <a href="#contato" class="px-5 py-2.5 rounded-full text-xs font-black text-slate-950 bg-brand-500 hover:bg-brand-400 shadow-md shadow-brand-500/20 transition">
+        <a href="#contato" class="px-5 py-2.5 rounded-full text-xs font-black text-white bg-brand-600 hover:bg-brand-700 shadow-md shadow-brand-600/20 transition">
           Falar com Comercial
         </a>
       </div>
@@ -92,7 +99,7 @@
         <a href="https://wa.me/5548999999999" target="_blank" class="w-full text-center py-2.5 rounded-full text-xs font-bold text-slate-800 bg-slate-100">
           Suporte WhatsApp
         </a>
-        <a href="#contato" class="w-full text-center py-2.5 rounded-full text-xs font-black text-slate-950 bg-brand-500">
+        <a href="#contato" class="w-full text-center py-2.5 rounded-full text-xs font-black text-white bg-brand-600">
           Solicitar Proposta
         </a>
       </div>
@@ -100,13 +107,13 @@
   </header>
 
   <!-- HERO SECTION -->
-  <section class="relative bg-gradient-to-b from-white via-amber-50/25 to-slate-100/70 pt-16 pb-20 md:pt-24 md:pb-32 overflow-hidden border-b border-slate-200/60">
+  <section class="relative bg-gradient-to-b from-white via-brand-50/40 to-slate-100/70 pt-16 pb-20 md:pt-24 md:pb-32 overflow-hidden border-b border-slate-200/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
         <!-- Texto Hero -->
         <div class="lg:col-span-6 space-y-6 text-center lg:text-left">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 text-brand-400 text-xs font-black uppercase tracking-wider">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 text-brand-300 text-xs font-black uppercase tracking-wider">
             <span class="w-2 h-2 rounded-full bg-brand-400 animate-pulse"></span>
             Portaria One Security
           </div>
@@ -120,7 +127,7 @@
           </p>
 
           <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
-            <a href="#contato" class="w-full sm:w-auto px-8 py-4 rounded-full text-sm font-black text-slate-950 bg-brand-500 hover:bg-brand-400 shadow-xl shadow-brand-500/25 transition text-center">
+            <a href="#contato" class="w-full sm:w-auto px-8 py-4 rounded-full text-sm font-black text-white bg-brand-600 hover:bg-brand-700 shadow-xl shadow-brand-600/25 transition text-center">
               Quero um orçamento
             </a>
             <a href="#solucoes" class="w-full sm:w-auto px-6 py-4 rounded-full text-sm font-bold text-slate-700 bg-white hover:bg-slate-50 border border-slate-200 transition text-center">
@@ -128,7 +135,7 @@
             </a>
           </div>
 
-          <!-- Métricas Hero (Somente as duas selecionadas) -->
+          <!-- Métricas Hero -->
           <div class="grid grid-cols-2 gap-6 pt-6 border-t border-slate-200 text-left max-w-sm mx-auto lg:mx-0">
             <div>
               <p class="text-3xl font-black text-slate-900">Até 50%</p>
@@ -141,7 +148,7 @@
           </div>
         </div>
 
-        <!-- Imagem Hero (Sem controles de player ou badges falsos) -->
+        <!-- Imagem Hero -->
         <div class="lg:col-span-6">
           <div class="relative mx-auto rounded-[36px] overflow-hidden shadow-2xl border-8 border-white bg-slate-900 aspect-[16/11]">
             <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1200&q=80" alt="Portaria One Security" class="w-full h-full object-cover">
@@ -172,7 +179,7 @@
           </div>
           <h3 class="text-xl font-bold text-white mb-3">Segurança Efetiva</h3>
           <p class="text-slate-400 text-sm leading-relaxed">
-            Tenha o controle e a gestão de quem entra e quem sai do condomínio. Câmeras com monitoramento perimetral inteligente disparam alertas caso surja qualquer irregularidade.
+            Tenha o controle e a gestão de quem entra e quem sai do condomínio. Câmeras com monitoramento perimetral inteligente disparam alertas caso surja qualquer irregularidade[cite: 1].
           </p>
         </div>
 
@@ -183,7 +190,7 @@
           </div>
           <h3 class="text-xl font-bold text-white mb-3">Comodidade e Praticidade</h3>
           <p class="text-slate-400 text-sm leading-relaxed">
-            Receba chamadas de vídeo diretamente no aplicativo de onde você estiver! Ou usufrua da nossa base de atendimento remoto operando 24 horas por dia, 7 dias por semana.
+            Receba chamadas de vídeo diretamente no aplicativo de onde você estiver! Ou usufrua da nossa base de atendimento remoto operando 24 horas por dia, 7 dias por semana[cite: 1].
           </p>
         </div>
 
@@ -194,14 +201,14 @@
           </div>
           <h3 class="text-xl font-bold text-white mb-3">Agilidade no Acesso</h3>
           <p class="text-slate-400 text-sm leading-relaxed">
-            Em poucos segundos você entra no condomínio via reconhecimento facial, sem necessidade de chaves. De carro, acesse com tag veicular de alta performance.
+            Em poucos segundos você entra no condomínio via reconhecimento facial, sem necessidade de chaves[cite: 1]. De carro, acesse com tag veicular de alta performance[cite: 1].
           </p>
         </div>
 
       </div>
 
       <div class="text-center">
-        <a href="#contato" class="inline-block px-8 py-3.5 rounded-full text-xs font-black uppercase tracking-wider text-slate-950 bg-brand-500 hover:bg-brand-400 shadow-lg shadow-brand-500/20 transition">
+        <a href="#contato" class="inline-block px-8 py-3.5 rounded-full text-xs font-black uppercase tracking-wider text-white bg-brand-600 hover:bg-brand-500 shadow-lg shadow-brand-600/30 transition">
           Quero um orçamento
         </a>
       </div>
@@ -231,12 +238,12 @@
           </div>
         </div>
         <div class="lg:col-span-6 space-y-4">
-          <div class="w-12 h-12 rounded-2xl bg-amber-100 text-brand-600 flex items-center justify-center font-bold">
+          <div class="w-12 h-12 rounded-2xl bg-brand-100 text-brand-700 flex items-center justify-center font-bold">
             <i data-lucide="video" class="w-6 h-6"></i>
           </div>
           <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-950">Videochamada + Base de Atendimento</h3>
           <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
-            No atendimento por videochamada, o visitante liga diretamente do terminal facial para o aplicativo do morador. Se o morador não puder atender, ocorre o <strong>transbordo automático para a nossa base de atendimento 24h</strong>. Nossos atendentes entram em contato com a unidade e liberam a entrada com total rigor.
+            No atendimento por videochamada, o visitante liga diretamente do terminal facial para o aplicativo do morador[cite: 1]. Se o morador não puder atender, ocorre o <strong>transbordo automático para a nossa base de atendimento 24h</strong>[cite: 1]. Nossos atendentes entram em contato com a unidade e liberam a entrada com total rigor[cite: 1].
           </p>
         </div>
       </div>
@@ -244,10 +251,10 @@
       <!-- 2. ARMÁRIOS INTELIGENTES / ZIBOX -->
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div class="lg:col-span-6 space-y-4 order-2 lg:order-1">
-          <div class="w-12 h-12 rounded-2xl bg-amber-100 text-brand-600 flex items-center justify-center font-bold">
+          <div class="w-12 h-12 rounded-2xl bg-brand-100 text-brand-700 flex items-center justify-center font-bold">
             <i data-lucide="package" class="w-6 h-6"></i>
           </div>
-          <span class="inline-block px-3 py-1 rounded-full text-[11px] font-black uppercase tracking-wider bg-brand-500 text-slate-950">Lockers Autônomos</span>
+          <span class="inline-block px-3 py-1 rounded-full text-[11px] font-black uppercase tracking-wider bg-brand-600 text-white">Lockers Autônomos</span>
           <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-950">Armários Inteligentes (Smart Lockers)</h3>
           <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
             Acabe de vez com o acúmulo de encomendas na recepção. O entregador deposita a mercadoria no armário inteligente com tela digital touch, e o morador recebe instantaneamente uma notificação com o código de desbloqueio para retirar na hora que achar mais conveniente.
@@ -264,12 +271,11 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div class="lg:col-span-6 flex justify-center">
           <div class="relative w-full max-w-lg rounded-[32px] overflow-hidden shadow-xl aspect-[4/3] bg-slate-100 border border-slate-200">
-            <!-- Salve a imagem enviada na sua pasta img com o nome tag-veicular.jpg -->
             <img src="img/58_grande.jpg" onerror="this.src='https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80'" alt="Tag Veicular RFID One Security" class="w-full h-full object-cover">
           </div>
         </div>
         <div class="lg:col-span-6 space-y-4">
-          <div class="w-12 h-12 rounded-2xl bg-amber-100 text-brand-600 flex items-center justify-center font-bold">
+          <div class="w-12 h-12 rounded-2xl bg-brand-100 text-brand-700 flex items-center justify-center font-bold">
             <i data-lucide="radio" class="w-6 h-6"></i>
           </div>
           <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-950">Abertura com Tag Veicular RFID</h3>
@@ -282,10 +288,10 @@
       <!-- 4. SENSOR DE NÍVEL DE CAIXA D'ÁGUA -->
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div class="lg:col-span-6 space-y-4 order-2 lg:order-1">
-          <div class="w-12 h-12 rounded-2xl bg-amber-100 text-brand-600 flex items-center justify-center font-bold">
+          <div class="w-12 h-12 rounded-2xl bg-brand-100 text-brand-700 flex items-center justify-center font-bold">
             <i data-lucide="droplets" class="w-6 h-6"></i>
           </div>
-          <span class="inline-block px-3 py-1 rounded-full text-[11px] font-black uppercase tracking-wider bg-brand-500 text-slate-950">Diferencial Exclusivo</span>
+          <span class="inline-block px-3 py-1 rounded-full text-[11px] font-black uppercase tracking-wider bg-brand-600 text-white">Diferencial Exclusivo</span>
           <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-950">Sensor Inteligente para Caixa d'Água</h3>
           <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
             Evite que o condomínio fique sem água por falha de bomba ou interrupção na rede pública. O sensor mede o nível do reservatório em tempo real e dispara avisos automáticos para a central e para o síndico antes que a água acabe ou ocorra transbordamento.
@@ -301,14 +307,14 @@
     </div>
   </section>
 
-  <!-- SEÇÃO APLICATIVO (Layout ajustado lado a lado) -->
+  <!-- SEÇÃO APLICATIVO -->
   <section id="aplicativo" class="py-24 bg-slate-900 text-white relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
         <!-- Coluna Esquerda: Títulos e Conceito -->
         <div class="lg:col-span-5 space-y-6">
-          <div class="inline-block px-3 py-1 rounded-full bg-brand-500/20 text-brand-400 text-xs font-bold uppercase tracking-wider">
+          <div class="inline-block px-3 py-1 rounded-full bg-brand-500/20 text-brand-300 text-xs font-bold uppercase tracking-wider">
             Gestão na Palma da Mão
           </div>
           <h2 class="text-3xl sm:text-4xl font-black text-white tracking-tight">
@@ -324,7 +330,7 @@
           </div>
         </div>
 
-        <!-- Coluna Direita: Cards dos Recursos (Substituindo o antigo mockup) -->
+        <!-- Coluna Direita: Cards dos Recursos -->
         <div class="lg:col-span-7">
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             
@@ -334,7 +340,7 @@
               </div>
               <div>
                 <h4 class="text-base font-bold text-white mb-1">Cadastro Facial</h4>
-                <p class="text-xs text-slate-400 leading-relaxed">Envio facilitado de fotos para cadastro ágil de novos moradores e dependentes sem burocracia.</p>
+                <p class="text-xs text-slate-400 leading-relaxed">Envio facilitado de fotos para cadastro ágil de novos moradores e dependentes sem burocracia[cite: 1].</p>
               </div>
             </div>
 
@@ -344,7 +350,7 @@
               </div>
               <div>
                 <h4 class="text-base font-bold text-white mb-1">Convite WhatsApp</h4>
-                <p class="text-xs text-slate-400 leading-relaxed">Geração de chave virtual temporária com QR Code ou facial para visitantes, prestadores e eventos.</p>
+                <p class="text-xs text-slate-400 leading-relaxed">Geração de chave virtual temporária com QR Code ou facial para visitantes, prestadores e eventos[cite: 1].</p>
               </div>
             </div>
 
@@ -354,7 +360,7 @@
               </div>
               <div>
                 <h4 class="text-base font-bold text-white mb-1">Câmeras em Tempo Real</h4>
-                <p class="text-xs text-slate-400 leading-relaxed">Acompanhe a calçada, hall de entrada e garagens diretamente pelo smartphone antes de sair de casa.</p>
+                <p class="text-xs text-slate-400 leading-relaxed">Acompanhe a calçada, hall de entrada e garagens diretamente pelo smartphone antes de sair de casa[cite: 1].</p>
               </div>
             </div>
 
@@ -364,7 +370,7 @@
               </div>
               <div>
                 <h4 class="text-base font-bold text-white mb-1">Avisos do Locker</h4>
-                <p class="text-xs text-slate-400 leading-relaxed">Notificação push instantânea assim que uma encomenda é depositada no armário inteligente com o PIN de resgate.</p>
+                <p class="text-xs text-slate-400 leading-relaxed">Notificação push instantânea assim que uma encomenda é depositada no armário inteligente com o PIN de resgate[cite: 1].</p>
               </div>
             </div>
 
@@ -392,7 +398,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         
         <div class="bg-white p-6 rounded-3xl border border-slate-200/80 shadow-sm">
-          <div class="w-10 h-10 rounded-xl bg-brand-500/20 text-brand-600 flex items-center justify-center mb-4">
+          <div class="w-10 h-10 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center mb-4">
             <i data-lucide="battery-charging" class="w-5 h-5"></i>
           </div>
           <h3 class="text-base font-bold text-slate-900 mb-2">No-break & Redundância</h3>
@@ -402,7 +408,7 @@
         </div>
 
         <div class="bg-white p-6 rounded-3xl border border-slate-200/80 shadow-sm">
-          <div class="w-10 h-10 rounded-xl bg-brand-500/20 text-brand-600 flex items-center justify-center mb-4">
+          <div class="w-10 h-10 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center mb-4">
             <i data-lucide="wifi" class="w-5 h-5"></i>
           </div>
           <h3 class="text-base font-bold text-slate-900 mb-2">Link de Internet Duplo</h3>
@@ -412,7 +418,7 @@
         </div>
 
         <div class="bg-white p-6 rounded-3xl border border-slate-200/80 shadow-sm">
-          <div class="w-10 h-10 rounded-xl bg-brand-500/20 text-brand-600 flex items-center justify-center mb-4">
+          <div class="w-10 h-10 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center mb-4">
             <i data-lucide="wrench" class="w-5 h-5"></i>
           </div>
           <h3 class="text-base font-bold text-slate-900 mb-2">Manutenção Preventiva</h3>
@@ -422,7 +428,7 @@
         </div>
 
         <div class="bg-white p-6 rounded-3xl border border-slate-200/80 shadow-sm">
-          <div class="w-10 h-10 rounded-xl bg-brand-500/20 text-brand-600 flex items-center justify-center mb-4">
+          <div class="w-10 h-10 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center mb-4">
             <i data-lucide="clock" class="w-5 h-5"></i>
           </div>
           <h3 class="text-base font-bold text-slate-900 mb-2">SLA de Atendimento Rápido</h3>
@@ -472,27 +478,27 @@
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label class="block text-xs font-bold text-slate-700 mb-1">Nome*</label>
-                  <input type="text" name="name" required placeholder="Seu nome" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-xs focus:outline-none focus:border-brand-500">
+                  <input type="text" name="name" required placeholder="Seu nome" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-xs focus:outline-none focus:border-brand-600">
                 </div>
 
                 <div>
                   <label class="block text-xs font-bold text-slate-700 mb-1">Email*</label>
-                  <input type="email" name="email" required placeholder="seu@email.com" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-xs focus:outline-none focus:border-brand-500">
+                  <input type="email" name="email" required placeholder="seu@email.com" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-xs focus:outline-none focus:border-brand-600">
                 </div>
 
                 <div>
                   <label class="block text-xs font-bold text-slate-700 mb-1">WhatsApp*</label>
-                  <input type="tel" name="phone" required placeholder="(00) 00000-0000" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-xs focus:outline-none focus:border-brand-500">
+                  <input type="tel" name="phone" required placeholder="(00) 00000-0000" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-xs focus:outline-none focus:border-brand-600">
                 </div>
 
                 <div>
                   <label class="block text-xs font-bold text-slate-700 mb-1">Cidade / Estado*</label>
-                  <input type="text" name="city" required placeholder="Ex: Florianópolis / SC" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-xs focus:outline-none focus:border-brand-500">
+                  <input type="text" name="city" required placeholder="Ex: Florianópolis / SC" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-xs focus:outline-none focus:border-brand-600">
                 </div>
 
                 <div>
                   <label class="block text-xs font-bold text-slate-700 mb-1">No condomínio você é:*</label>
-                  <select name="role" required class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-xs focus:outline-none focus:border-brand-500">
+                  <select name="role" required class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-xs focus:outline-none focus:border-brand-600">
                     <option value="" disabled selected>Selecione</option>
                     <option value="Síndico(a) ou Subsíndico(a)">Síndico(a) ou Subsíndico(a)</option>
                     <option value="Administradora de condomínio">Administradora de condomínio</option>
@@ -504,7 +510,7 @@
 
                 <div>
                   <label class="block text-xs font-bold text-slate-700 mb-1">Interesse principal:*</label>
-                  <select name="interest" required class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-xs focus:outline-none focus:border-brand-500">
+                  <select name="interest" required class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-xs focus:outline-none focus:border-brand-600">
                     <option value="" disabled selected>Selecione</option>
                     <option value="Portaria Remota / Autônoma">Portaria Remota / Autônoma</option>
                     <option value="Armários Inteligentes (Lockers)">Armários Inteligentes (Lockers)</option>
@@ -517,13 +523,13 @@
 
               <div>
                 <label class="block text-xs font-bold text-slate-700 mb-1">Nome do condomínio e número de unidades*</label>
-                <input type="text" name="condo_name" required placeholder="Ex: Residencial das Flores, 36 apartamentos" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-xs focus:outline-none focus:border-brand-500">
+                <input type="text" name="condo_name" required placeholder="Ex: Residencial das Flores, 36 apartamentos" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-xs focus:outline-none focus:border-brand-600">
               </div>
 
               <!-- Feedback Status -->
               <div id="form-status" class="hidden p-3 rounded-xl text-xs font-semibold text-center"></div>
 
-              <button type="submit" id="submit-btn" class="w-full py-3.5 rounded-full text-xs font-black uppercase tracking-wider text-slate-950 bg-brand-500 hover:bg-brand-400 shadow-md transition flex items-center justify-center gap-2">
+              <button type="submit" id="submit-btn" class="w-full py-3.5 rounded-full text-xs font-black uppercase tracking-wider text-white bg-brand-600 hover:bg-brand-700 shadow-md transition flex items-center justify-center gap-2">
                 <span>Falar com Comercial</span>
                 <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </button>
@@ -572,7 +578,7 @@
         <h4 class="text-white font-bold mb-3 uppercase tracking-wider">Contato Comercial</h4>
         <p class="text-slate-400 mb-2">Atendimento especializado:</p>
         <a href="https://wa.me/5548999999999" target="_blank" class="text-brand-400 font-bold flex items-center gap-1.5 mb-2 hover:underline">
-          <i data-lucide="message-circle" class="w-4 h-4 text-emerald-400"></i> (48) 99999-9999
+          <i data-lucide="message-circle" class="w-4 h-4 text-brand-400"></i> (48) 99999-9999
         </a>
         <p class="text-slate-500">comercial@onesecurityportaria.com.br</p>
       </div>
@@ -586,7 +592,7 @@
   </footer>
 
   <!-- BOTÃO FLUTUANTE WHATSAPP -->
-  <a href="https://wa.me/5548999999999?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20One%20Security%20Portaria%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" class="fixed bottom-6 right-6 z-50 h-14 w-14 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white flex items-center justify-center shadow-xl hover:scale-105 transition" aria-label="Falar no WhatsApp">
+  <a href="https://wa.me/5548999999999?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20One%20Security%20Portaria%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" class="fixed bottom-6 right-6 z-50 h-14 w-14 rounded-full bg-brand-600 hover:bg-brand-500 text-white flex items-center justify-center shadow-xl hover:scale-105 transition" aria-label="Falar no WhatsApp">
     <i data-lucide="message-circle" class="w-7 h-7"></i>
   </a>
 
@@ -630,7 +636,7 @@
         const result = await response.json();
 
         if (response.status === 200) {
-          statusDiv.className = 'p-3 rounded-xl text-xs font-bold text-center bg-emerald-50 text-emerald-700 border border-emerald-200';
+          statusDiv.className = 'p-3 rounded-xl text-xs font-bold text-center bg-blue-50 text-brand-700 border border-brand-200';
           statusDiv.innerText = 'Solicitação enviada com sucesso! Nosso comercial entrará em contato.';
           statusDiv.classList.remove('hidden');
           form.reset();
